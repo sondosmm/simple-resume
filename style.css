@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans';
+    background-color: #c3597d;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'left-section middle-section right-section';
+    grid-gap: 40px;
+}
+.left-section{
+    background: url('2.jpg');
+    height: 100vh;
+    width: 100vh;
+    grid-area: left-section;
+    background-size: cover;
+    background-position: center;
+}
+.middle-section{
+    grid-area: middle-section;
+}
+h1,h2{
+    font-family: 'Lobster Two';
+}
+.basic-information{
+    padding: 20px 10px 20px 10px;
+}
+.right-section{
+    padding: 20px 10px 20px 10px;
+    grid-area: right-section;
+}
+.skills{
+    background-color: #96C9CA;
+    padding: 10px;
+    border-radius: 20px;
+}
+.checked{
+    color: #EBE5CF;
+}
+h1{
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+h2{
+    color:#EBE5CF ;
+}
+.dash{
+    height: 5px;
+    width: 40px;
+    background-color:#EBE5CF;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.educational-background{
+    margin-top: 20px;
+}
+.accounts{
+    background-color: #96C9CA;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.skills h2{
+    margin-bottom: 20px;
+}
+.accounts h2{
+    margin-bottom: 15px;
+}
+.hobbies{
+    margin-top: 20px;
+}
+a{
+    color: black;
+}
+@media(max-width:1299px){
+    .grid-container{
+        grid-template-areas: 
+        'left-section middle-section'
+        'left-section right-section';
+    }
+    .left-section{
+        height: 225vh;
+    }
+}
+@media(max-width:1100px){
+    .grid-container{
+        grid-template-areas: 
+        'left-section'
+        'middle-section'
+        'right-section';
+        grid-gap: 20px;
+    }
+    .left-section{
+        height: 15vh;
+        width: 150vh;
+    }
+}
+@media(max-width:900px){
+    .grid-container{
+        grid-template-areas:
+        'left-section'
+        'middle-section'
+        'right-section' ;
+        width: 90%;
+        margin: auto;
+        grid-gap: 20px;
+    }
+    .left-section{
+        height: 75vh;
+        width: 75vh;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+}
+@media(max-width:700px){
+    .grid-container{
+        grid-template-areas: 
+        'left-section'
+        'middle-section'
+        'right-section';
+        grid-gap: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    .left-section{
+        height: 40vh;
+        width: 40vh;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+}
